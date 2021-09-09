@@ -13,7 +13,7 @@
 
         }
 
-        #conteneur h1 {
+        #conteneur h1, strong {
             text-decoration-line: underline;
         }
     </style>
@@ -275,13 +275,123 @@
                 ECRIRE ("Entrez un nombre") <br></br>
                 LIRE (nb) <br></br>
                 SI nb > 0 Alors <br></br>
-                LIRE ("Le nombre est positif") <br></br>
+                ECRIRE ("Le nombre est positif") <br></br>
                 SINON <br></br>
-                    LIRE("Le nombre est négatif")
+                    ECRIRE ("Le nombre est négatif")
+                    <br></br>
+                    FINSI
+                
                     <br></br>
                     FIN
             </p>
         </div>
+
+        <strong>PARTIE III</strong>
+        <div>
+            <h1>EXERCICE 3.2</h1>
+            <p>
+                DEBUT <br></br>
+                VAR a, b: réel <br></br>
+                ECRIRE ("Entrez deux nombres") <br></br>
+                LIRE (a, b) <br></br>
+                SI ( a > 0 ET b > 0 ) OU ( a < 0 ET b < 0) Alors <br></br>
+                ECRIRE ("Leur produit est positif") <br></br>
+                SINON <br></br>
+                    ECRIRE ("Leur produit est négatif") <br></br>
+                    FINSI
+                
+                <br></br>
+                FIN
+            </p>
+        </div>
+
+        <div>
+            <h1>EXERCICE 3.3</h1>
+            <p>
+                DEBUT <br></br>
+                VAR a, b, c: caracteres <br></br>
+                ECRIRE ("Entrez trois noms) <br></br>
+                LIRE (a, b, c) <br></br>
+                SI ( a < b ET b < c ) Alors <br></br>
+                ECRIRE ("ces noms sont classés alphabetiquement") <br></br>
+                SINON <br></br>
+                    ECRIRE ("ces noms ne sont pas classés") <br></br>
+                    FINSI
+                
+                <br></br>
+                FIN
+            </p>
+        </div>
+
+        <div>
+            <h1>EXERCICE 3.4</h1>
+            <p>
+                DEBUT <br></br>
+                VAR a: ENTIER <br></br>
+                ECRIRE ("Entrez un nombre") <br></br>
+                LIRE (a) <br></br>
+                SI  a < 0 Alors <br></br>
+                ECRIRE ("Ce nombre est négatif") <br></br>
+                SINON SI a = 0 ALORS<br></br>
+                    ECRIRE ("Ce nombre est nul") <br></br>
+                SINON <br></br>
+                    ECRIRE ("Ce nombre est positif") <br></br>
+                    FINSI <br></br>
+                    FINSI
+                
+                <br></br>
+                FIN
+            </p>
+        </div>
+
+        <div>
+            <h1>EXERCICE 3.5</h1>
+            <p>
+                DEBUT <br></br>
+                VAR a, b: réel <br></br>
+                ECRIRE ("Entrez deux nombres") <br></br>
+                LIRE (a, b) <br></br>
+                SI (a = 0 OU b = 0 ) ALORS <br></br>
+                ECRIRE ("Le produit est nul") <br></br>
+                SINON SI ( a > 0 ET b > 0 ) OU ( a < 0 ET b < 0) Alors <br></br>
+                ECRIRE ("Leur produit est positif") <br></br>
+                SINON <br></br>
+                    ECRIRE ("Leur produit est négatif") <br></br>
+                    FINSI <br></br>
+                    FINSI
+                
+                <br></br>
+                FIN
+            </p>
+        </div>
+
+        <div>
+            <h1>EXERCICE 3.6</h1>
+            <p>
+                DEBUT <br></br>
+                VAR nom, prenom, email, mp: caractères <br></br>
+                ECRIRE ("Entrez votre nom") <br></br>
+                LIRE (nom) <br></br>
+                ECRIRE ("Entrez votre prenom") <br></br>
+                LIRE (prenom) <br></br>
+                ECRIRE ("Entrez votre email") <br></br>
+                LIRE (email) <br></br>
+                ECRIRE ("Entrez votre mot de passe") <br></br>
+                LIRE (mp) <br></br>
+                SI FORMAT(mp) <> "xxx@gmail.com" ALORS <br></br>
+                ECRIRE ("Veuillez rentrer une adresse correcte") <br></br>
+                SI Longueur(mp) < 8 Alors <br></br>
+                ECRIRE ("Votre mot de passe doit contenir 8 caractères") <br></br>
+                SINON <br></br>
+                    ECRIRE ("Vos informations ont été bien enregistrées") <br></br>
+                    FINSI <br></br>
+                    FINSI
+                
+                <br></br>
+                FIN
+            </p>
+        </div>
+
 
     </div>
 </body>
